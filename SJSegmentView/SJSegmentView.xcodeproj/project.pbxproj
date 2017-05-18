@@ -15,7 +15,7 @@
 		CB2E20971ECC7BC000B9077B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2E20951ECC7BC000B9077B /* LaunchScreen.storyboard */; };
 		CB2E20A21ECC7BC000B9077B /* SJSegmentViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2E20A11ECC7BC000B9077B /* SJSegmentViewTests.m */; };
 		CB2E20AD1ECC7BC000B9077B /* SJSegmentViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2E20AC1ECC7BC000B9077B /* SJSegmentViewUITests.m */; };
-		CB2E20BC1ECC7D7800B9077B /* SJSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2E20BB1ECC7D7800B9077B /* SJSegmentView.m */; };
+		CB2E20C01ECD9DB600B9077B /* SJSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2E20BF1ECD9DB600B9077B /* SJSegmentView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +52,8 @@
 		CB2E20A81ECC7BC000B9077B /* SJSegmentViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SJSegmentViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB2E20AC1ECC7BC000B9077B /* SJSegmentViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJSegmentViewUITests.m; sourceTree = "<group>"; };
 		CB2E20AE1ECC7BC000B9077B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB2E20BA1ECC7D7800B9077B /* SJSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSegmentView.h; sourceTree = "<group>"; };
-		CB2E20BB1ECC7D7800B9077B /* SJSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSegmentView.m; sourceTree = "<group>"; };
+		CB2E20BE1ECD9DB600B9077B /* SJSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJSegmentView.h; sourceTree = "<group>"; };
+		CB2E20BF1ECD9DB600B9077B /* SJSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJSegmentView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +112,8 @@
 				CB2E20931ECC7BC000B9077B /* Assets.xcassets */,
 				CB2E20951ECC7BC000B9077B /* LaunchScreen.storyboard */,
 				CB2E20981ECC7BC000B9077B /* Info.plist */,
+				CB2E20BD1ECD9DB600B9077B /* SJSegmentView */,
 				CB2E20871ECC7BC000B9077B /* Supporting Files */,
-				CB2E20BA1ECC7D7800B9077B /* SJSegmentView.h */,
-				CB2E20BB1ECC7D7800B9077B /* SJSegmentView.m */,
 			);
 			path = SJSegmentView;
 			sourceTree = "<group>";
@@ -143,6 +142,15 @@
 				CB2E20AE1ECC7BC000B9077B /* Info.plist */,
 			);
 			path = SJSegmentViewUITests;
+			sourceTree = "<group>";
+		};
+		CB2E20BD1ECD9DB600B9077B /* SJSegmentView */ = {
+			isa = PBXGroup;
+			children = (
+				CB2E20BE1ECD9DB600B9077B /* SJSegmentView.h */,
+				CB2E20BF1ECD9DB600B9077B /* SJSegmentView.m */,
+			);
+			path = SJSegmentView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,7 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB2E208F1ECC7BC000B9077B /* ViewController.m in Sources */,
-				CB2E20BC1ECC7D7800B9077B /* SJSegmentView.m in Sources */,
+				CB2E20C01ECD9DB600B9077B /* SJSegmentView.m in Sources */,
 				CB2E208C1ECC7BC000B9077B /* AppDelegate.m in Sources */,
 				CB2E20891ECC7BC000B9077B /* main.m in Sources */,
 			);
@@ -511,6 +519,7 @@
 				CB2E20B31ECC7BC000B9077B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB2E20B41ECC7BC000B9077B /* Build configuration list for PBXNativeTarget "SJSegmentViewTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +528,7 @@
 				CB2E20B61ECC7BC000B9077B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB2E20B71ECC7BC000B9077B /* Build configuration list for PBXNativeTarget "SJSegmentViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +537,7 @@
 				CB2E20B91ECC7BC000B9077B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

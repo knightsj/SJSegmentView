@@ -8,20 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol SJSegmentViewDelegate
+@protocol SJSegmentViewDelegate <NSObject>
 
 - (void)didSelectedIndex:(NSUInteger)index;
 
 @end
 
 
-@protocol SJSegmentViewDataSource
+@protocol SJSegmentViewDataSource <NSObject>
 
 @required
 - (UIColor *)selectedBgColor;
-- (UIColor *)selectedTextColor;
 
 @optional
+
+- (UIColor *)selectedTextColor;      //default is white
 - (UIColor *)unSelectedBgColor;      //default is white
 - (UIColor *)unSelectedTextColor;    //default is black
 

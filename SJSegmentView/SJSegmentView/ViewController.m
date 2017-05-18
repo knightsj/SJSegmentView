@@ -7,22 +7,35 @@
 //
 
 #import "ViewController.h"
+#import "SJSegmentView.h"
 
-@interface ViewController ()
+@interface ViewController ()<SJSegmentViewDelegate,SJSegmentViewDataSource>
 
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
+
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    SJSegmentView *segView = [[SJSegmentView alloc] initWithFrame:CGRectMake(-1, 20, self.view.bounds.size.width + 2, 30) titles:@[@"消息",@"记录",@"sdfsd",@"sdfsd"] font:[UIFont systemFontOfSize:16]];
+    segView.sjDelegate = self;
+    segView.sjDataSource = self;
+    
+    [self.view addSubview:segView];
+    
 }
 
+#pragma mark- SJSegmentViewDataSource
+- (UIColor *)selectedBgColor{
+    return [UIColor redColor];
+}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark- SJSegmentViewDelegate
+- (void)didSelectedIndex:(NSUInteger)index
+{
+    NSLog(@"did selected index : %ld",index);
 }
 
 
